@@ -1,0 +1,88 @@
+﻿@model ContosoTeamStats.Models.Education
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Education</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OPEID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OPEID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OPEID6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OPEID6)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.INSTNM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.INSTNM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CITY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CITY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.STATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.STATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.INSTURL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.INSTURL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SAT_AVG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SAT_AVG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GRADDEBT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GRADDEBT)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

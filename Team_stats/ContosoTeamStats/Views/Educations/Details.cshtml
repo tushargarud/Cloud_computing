@@ -1,0 +1,82 @@
+﻿@model ContosoTeamStats.Models.Education
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Education</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OPEID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OPEID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OPEID6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OPEID6)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.INSTNM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.INSTNM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CITY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CITY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.STATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.STATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.INSTURL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.INSTURL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SAT_AVG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SAT_AVG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GRADDEBT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GRADDEBT)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.UNITID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

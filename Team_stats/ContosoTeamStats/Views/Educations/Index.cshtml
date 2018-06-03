@@ -1,0 +1,75 @@
+﻿@model IEnumerable<ContosoTeamStats.Models.Education>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<input type="text" id="val1" />
+<input type="text" id="val2" />
+<input type="button" value="Create" onclick="location.href='@Url.Action("ChangeQueryResultData", "EducationsController")'" />
+
+
+<h2>Index</h2>
+
+<tr><td colspan="5">@ViewBag.Msg</td></tr>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.OPEID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OPEID6)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.INSTNM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CITY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.INSTURL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SAT_AVG)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GRADDEBT)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.OPEID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OPEID6)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.INSTNM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CITY)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.STATE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.INSTURL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SAT_AVG)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GRADDEBT)
+            </td>
+        </tr>
+    }
+
+</table>
